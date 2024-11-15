@@ -11,55 +11,55 @@
 
    - Six AA batteries or two 18650 batteries
    - A computer with a stable Internet connection
-   - We can use the joystick to control the robot arm. But if you want to control it using wifi, you need to prepare a 2.4 GHz WiFi(It can be a mobile hotspot or a router), another phone/IPAD/computer that can connect to the same WiFi.
+   - We can use the joystick to control the robot arm. But if you want to control it wirelessly, you need to prepare a ***\*2.4 GHz\**** WiFi(It can be a mobile hotspot or a router)
 
 
 ## 1. Kit List
 
 **Please check the list to ensure that all parts are intact. If you find missing ones, please contact our sales staff immediately.**
 
-|  #   |                   PIC                    |                             NAME                             | QTY  |
-| :--: | :--------------------------------------: | :----------------------------------------------------------: | :--: |
-|  1   |         ![img](./media/wps1.jpg)         |              Keyestudio ESP32 servo drive board              |  1   |
-|  2   |         ![img](./media/wps2.jpg)         |                 keyestudio ESP32 Core board                  |  1   |
-|  3   |         ![img](./media/wps3.jpg)         |                  Keyestudio Joystick Module                  |  2   |
-|  4   |         ![img](./media/wps4.jpg)         |                     3D PS2 joystick cap                      |  2   |
-|  5   |         ![img](./media/wps5.jpg)         |                     Acrylic handle T=3MM                     |  1   |
-|  6   |         ![img](./media/wps6.jpg)         |               MG90S 14G 180° servo metal gear                |  3   |
-|  7   |         ![img](./media/wps7.jpg)         |                   Keyestudio 9G 180° servo                   |  1   |
-|  8   |         ![img](./media/wps8.jpg)         |          DC 6-slot AA battery holder 15CM connector          |  1   |
-|  9   | ![img](./media/wps4-1717729025074-1.jpg) | 2 18650 battery packs <br />(recommended to use pointed 18650 batteries) |  1   |
-|  10  |        ![img](./media/wps19.jpg)         |                   F-F 50CM/10P DuPont wire                   |  1   |
-|  11  |        ![img](./media/wps20.jpg)         |                      cable tie 3*100MM                       |  7   |
-|  12  |        ![img](./media/wps21.jpg)         |                       Micro USB cable                        |  1   |
-|  13  |        ![img](./media/wps22.jpg)         |         3 pin M-F 20CM DuPont wire (used to extend the wire of the clip)         |  1   |
-|  14  |        ![img](./media/wps23.jpg)         |                 3*40MM Phillips screwdriver                  |  1   |
-|  15  |        ![img](./media/wps24.jpg)         |                         M2+M3 wrench                         |  1   |
-|  16  |        ![img](./media/wps25.jpg)         | F693ZZ motor class<br />Inner: 3MM; Outer: 8MM; Thickness: 4MM |  3   |
-|  17  |        ![img](./media/wps26.jpg)         | AXK 3-plate flat bearing<br />Inner: 20MM; Outer: 35MM, Thickness: 4MM |  1   |
-|  18  |        ![img](./media/wps27.jpg)         |                       2 bearing covers(You need to tear off the brown protective film)                       |  1   |
-|  19  |        ![img](./media/wps28.jpg)         |                       4 acrylic board                        |  1   |
-|  20  |        ![img](./media/wps29.jpg)         |                            M3 nut                            |  14  |
-|  21  |        ![img](./media/wps30.jpg)         |                            M2 nut                            |  4   |
-|  22  |        ![img](./media/wps31.jpg)         |                     M3 self-locking nut                      |  8   |
-|  23  |        ![img](./media/wps32.jpg)         |                           M2.5 nut                           |  8   |
-|  24  |        ![img](./media/wps33.jpg)         |                   M3*6MM round head screw                    |  4   |
-|  25  |        ![img](./media/wps34.jpg)         |                   M2*10MM round head screw                   |  4   |
-|  26  |        ![img](./media/wps35.jpg)         |                   M3*8MM round head screw                    |  4   |
-|  27  |        ![img](./media/wps36.jpg)         |              M1.2*5MM self-tapping screw 2.54MM              |  2   |
-|  28  |        ![img](./media/wps37.jpg)         |                   M3*10MM round head screw                   |  3   |
-|  29  |        ![img](./media/wps38.jpg)         |                   M3*12MM round head screw                   |  5   |
-|  30  |        ![img](./media/wps39.jpg)         |                M3*6MM round head nylon screw                 |  8   |
-|  31  |        ![img](./media/wps41.jpg)         |                M3*16mm dual-pass nylon pillar                |  2   |
-|  32  |        ![img](./media/wps40.jpg)         |                M3*22mm dual-pass nylon pillar                |  2   |
-|  33  |        ![img](./media/wps43.jpg)         |                  M2*8MM self-tapping screw                   |  4   |
-|  34  |        ![img](./media/wps44.jpg)         |              M1.2*4MM self-tapping screw 2.54MM              |  4   |
-|  35  |        ![img](./media/wps45.jpg)         |                    M3*8MM flat head screw                    |  2   |
-|  36  |        ![img](./media/wps46.jpg)         |            M2.5*25+6MM single-pass copper pillar             |  8   |
-|  37  |        ![img](./media/wps47.jpg)         |                  M2.5*6MM round head screw                   |  8   |
-|  38  |        ![img](./media/wps48.jpg)         |                 M1.4*6MM self-tapping screw                  |  4   |
-|  39  |        ![img](./media/wps49.jpg)         |              M3*6+6MM single-pass copper pillar              |  6   |
-|  40  |        ![img](./media/wps50.jpg)         |                   M3*14MM flat head screw                    |  2   |
+|  #   |                             PIC                              |                             NAME                             | QTY  |
+| :--: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--: |
+|  1   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps1.jpg)        |              Keyestudio ESP32 servo drive board              |  1   |
+|  2   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps2.jpg)        |                 keyestudio ESP32 Core board                  |  1   |
+|  3   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps3.jpg)        |                  Keyestudio Joystick Module                  |  2   |
+|  4   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps4.jpg)        |                     3D PS2 joystick cap                      |  2   |
+|  5   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps5.jpg)        |                     Acrylic handle T=3MM                     |  1   |
+|  6   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps6.jpg)        |                  MG90S 14G 180° metal servo                  |  3   |
+|  7   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps7.jpg)        |                 9G 180° servo for robot claw                 |  1   |
+|  8   |       ![img](Smart%20Robot%20Arm%20Tutorial/wps8.jpg)        |          DC 6-slot AA battery holder 15CM connector          |  1   |
+|  9   | ![img](Smart%20Robot%20Arm%20Tutorial/wps4-1717729025074-1.jpg) | 2 18650 battery packs <br />(recommended to use pointed 18650 batteries) |  1   |
+|  10  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps19.jpg)       |                   F-F 50CM/10P DuPont wire                   |  1   |
+|  11  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps20.jpg)       |                      cable tie 3*100MM                       |  7   |
+|  12  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps21.jpg)       |                       Micro USB cable                        |  1   |
+|  13  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps22.jpg)       | 3 pin M-F 20CM DuPont wire (used to extend the wire of the clip) |  1   |
+|  14  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps23.jpg)       |                 3*40MM Phillips screwdriver                  |  1   |
+|  15  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps24.jpg)       |                         M2+M3 wrench                         |  1   |
+|  16  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps25.jpg)       | F693ZZ motor class<br />Inner: 3MM; Outer: 8MM; Thickness: 4MM |  3   |
+|  17  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps26.jpg)       | AXK 3-plate flat bearing<br />Inner: 20MM; Outer: 35MM, Thickness: 4MM |  1   |
+|  18  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps27.jpg)       | 2 bearing covers(You need to tear off the brown protective film) |  1   |
+|  19  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps28.jpg)       |                       4 acrylic board                        |  1   |
+|  20  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps29.jpg)       |                            M3 nut                            |  14  |
+|  21  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps30.jpg)       |                            M2 nut                            |  4   |
+|  22  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps31.jpg)       |                     M3 self-locking nut                      |  8   |
+|  23  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps32.jpg)       |                           M2.5 nut                           |  8   |
+|  24  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps33.jpg)       |                   M3*6MM round head screw                    |  4   |
+|  25  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps34.jpg)       |                   M2*10MM round head screw                   |  4   |
+|  26  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps35.jpg)       |                   M3*8MM round head screw                    |  4   |
+|  27  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps36.jpg)       |              M1.2*5MM self-tapping screw 2.54MM              |  2   |
+|  28  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps37.jpg)       |                   M3*10MM round head screw                   |  3   |
+|  29  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps38.jpg)       |                   M3*12MM round head screw                   |  5   |
+|  30  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps39.jpg)       |                M3*6MM round head nylon screw                 |  8   |
+|  31  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps41.jpg)       |                M3*16mm dual-pass nylon pillar                |  2   |
+|  32  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps40.jpg)       |                M3*22mm dual-pass nylon pillar                |  2   |
+|  33  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps43.jpg)       |                  M2*8MM self-tapping screw                   |  4   |
+|  34  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps44.jpg)       |              M1.2*4MM self-tapping screw 2.54MM              |  4   |
+|  35  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps45.jpg)       |                    M3*8MM flat head screw                    |  2   |
+|  36  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps46.jpg)       |            M2.5*25+6MM single-pass copper pillar             |  8   |
+|  37  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps47.jpg)       |                  M2.5*6MM round head screw                   |  8   |
+|  38  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps48.jpg)       |                 M1.4*6MM self-tapping screw                  |  4   |
+|  39  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps49.jpg)       |              M3*6+6MM single-pass copper pillar              |  6   |
+|  40  |       ![img](Smart%20Robot%20Arm%20Tutorial/wps50.jpg)       |                   M3*14MM flat head screw                    |  2   |
 
 
 
@@ -97,7 +97,7 @@ DOF: 4 degree of freedom
 
 ## 5. KEYESTUDIO ESP32 Main Board
 
-![](./media/5-1.png)
+![](Smart%20Robot%20Arm%20Tutorial/5-1.png)
 
 ### 5.1 Introduction
 
@@ -133,7 +133,7 @@ Weight: 9.3g
 
 ### 5.3 Pin-out
 
-![](./media/5-3-1.png)
+![](Smart%20Robot%20Arm%20Tutorial/5-3-1.png)
 
 Although ESP32 board boasts fewer pins than commonly used processors, you will not encounter any problems when you reuse multiple functions on pins (pins IO36, IO35, IO34, IO39 only inputs signals).
 
@@ -141,7 +141,7 @@ Although ESP32 board boasts fewer pins than commonly used processors, you will n
 
 ● **Power**: 2 power supply pins +5V and 3.3V, used to power other devices and modules.
 
-![11](./media/5-3-2.png)
+![11](Smart%20Robot%20Arm%20Tutorial/5-3-2.png)
 
 ● **GND**: 3 GND pins.
 
@@ -167,7 +167,7 @@ Although ESP32 board boasts fewer pins than commonly used processors, you will n
 
 ### 5.4 Main Parts
 
-![](./media/5-4.png)
+![](Smart%20Robot%20Arm%20Tutorial/5-4.png)
 
 ## 6. ESP32 Servo Drive Board
 
@@ -208,44 +208,44 @@ There are versions for Windows, Mac, and Linux systems.
 Here we will choose the Windows version to show you how to download, install and use it. You can choose between the Installer (.exe) and the Zip packages. We suggest you use the first one that installs directly everything you need to use the Arduino Software (IDE), including the drivers. With the Zip package you need to install the drivers manually. The Zip file is also useful if you want to create a portable installation.
 
 - 1.Select Win 10 and newer, 64 bits in DOWNLOAD OPTIONS.
-![Img](./media/img-20240701161834.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701161834.png)
 
 - 2.Click JUST DOWNLOAD
-![Img](./media/img-20240701161906.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701161906.png)
 
 - 3.Join Newsletter or you can just Click JUST DOWNLOAD
-![Img](./media/img-20240701161935.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701161935.png)
 
 
 - 4.Save the .exe file downloaded from the software page to your hard drive and simply run the file .
-![Img](./media/img-20240701162017.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162017.png)
 
 - 5.Read the License Agreement and agree it.
-![Img](./media/img-20240701162032.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162032.png)
 
 - 6.Choose the installation options.
-![Img](./media/img-20240701162045.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162045.png)
 
 - 7.Choose the install location.
-![Img](./media/img-20240701162058.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162058.png)
 
 - 8. In addition, the security center may pop up a few times asking you if you want to install some device driver. Please install all of them.
-![Img](./media/img-20240701162124.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162124.png)
 
 - 9.Click finish and run Arduino IDE
-![Img](./media/img-20240701162200.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162200.png)
 
 - 10.Firewall will ask whether we'd like to give allow access, just simply click on Allow access.
-![Img](./media/img-20240701162211.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162211.png)
 
 - 10.Firewall will ask whether we'd like to give allow access, just simply click on Allow access.
 11.Wait for some time to allow arduino IDE to automatically install the Arduino AVR Boards, built-in libraries, and other required files.
-![Img](./media/img-20240701162225.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162225.png)
 
 ---
 
 ### 7.2 Introduce of Arduino IDE 2.0
-![Img](./media/img-20240701162410.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701162410.png)
 **Verify / Upload** - compile and upload your code to your Arduino Board.
 **Select Board & Port** - detected Arduino boards automatically show up here, along with the port number.
 **Sketchbook** - here you will find all of your sketches locally stored on your computer. Additionally, you can sync with the Arduino Cloud, and also obtain your sketches from the online environment.
@@ -268,27 +268,27 @@ Connect the ESP32 board to the computer with the usb cable and wait for Windows 
 Open the **Device Manager** by right clicking **“My computer” **and selecting **control panel**.
 Look under **Ports (COM & LPT)**. You should see an open port named **Silicon Labs CP210x USB to UART Bridge (COM-X)**
 Click **Tools>Port** at Arduino IDE, you can find the com port displayed by device manager
-![Img](./media/img-20240701172100.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701172100.png)
 
 If **the installation process fail**, you should see a device with a tiny yellow triangle and exclamation mark next to it.
-![Img](./media/img-20240701172135.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701172135.png)
 
 **Now let's install CP210x Chip driver manually.**
 
 1. In the tutorial package we downloaded(https://fs.keyestudio.com/FKS0003), you can find the CP210x_6.7.4 driver file.
-![Img](./media/img-20240701173045.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701173045.png)
 
 2. Right click on the **"CP210x USB to UART Bridge Controller"** and choose the **"Update Driver Software"** option.
-![Img](./media/img-20240701173158.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701173158.png)
 
 3. Choose the **"Browse my computer for Driver software"** option.
-![Img](./media/img-20240701173224.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701173224.png)
 
 4. Select the driver file named **"CP210x_6.7.4"**, located in the tutorial package we downloaded.
-![Img](./media/img-20240701173925.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701173925.png)
 
 5. After a while, the driver is installed successfully.
-![Img](./media/img-20240701174031.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240701174031.png)
 
 ---
 
@@ -302,25 +302,30 @@ If **the installation process fail**, you should see a device with a tiny yellow
 
 For Windows, there is an easier way to install the ESP32 environment. 
 Double click the downloaded program `esp32_package_2.0.12_arduinome.exe` in the tutorial package to enable the automatic installation. 
-![Img](./media/img-20240702092831.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240702092831.png)
 
 Wait for its installation process to complete
-![Img](./media/img-20240702093000.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240702093000.png)
 
 You can also find the download link to the `esp32_package_2.0.12_arduinome.exe` : [https://fs.keyestudio.com/ESP32](https://fs.keyestudio.com/ESP32)
 
 After the installation is complete, type ESP32 in the BOARDS MANAGER of the Arduino IDE, you will see the the ESP32 environment in Arduino: 2.0.12 (ESP32 by Espressif Systems)
-![Img](./media/img-20240702093527.png)
+![Img](Smart%20Robot%20Arm%20Tutorial/img-20240702093527.png)
 
 ---
 
-### 7.5 Uplod your first sketch.
-<p style="font-size:18px;color:red;">Now let's start our first programming project to adjust the servo angle to 90°.</p>
+### 7.5 Adjust the servo to 90° before assembly
+We need to adjust all the servos to 90° before assembly so that the robotic arm will work as preset. Otherwise, the robot will not work and the servos may be burned out.
 
-1.You need to prepare one of the servos, an EPS32 board, an ESP32 shield, and a USB cable.
-![Img](./media/img-20240702104341.png)
-![Img](./media/img-20240702104929.png)
-![Img](./media/img-20240702104953.png)
+1. Prepare four servos, an EPS32 board, an ESP32 shield, and a USB cable.
+
+| #    | PIC                                             | NAME                               | QTY  |
+| ---- | ----------------------------------------------- | ---------------------------------- | ---- |
+| 1    | ![img](Smart%20Robot%20Arm%20Tutorial/wps1.png) | Keyestudio ESP32 servo drive board | 1    |
+| 2    | ![img](Smart%20Robot%20Arm%20Tutorial/wps2.png) | keyestudio ESP32 Core board        | 1    |
+| 3    | ![img](Smart%20Robot%20Arm%20Tutorial/wps3.png) | MG90S 14G 180° metal servo         | 3    |
+| 4    | ![img](Smart%20Robot%20Arm%20Tutorial/wps4.png) | 9G 180° servo for robot claw       | 1    |
+| 5    | ![img](Smart%20Robot%20Arm%20Tutorial/wps5.png) | Micro USB cable                    | 1    |
 
 2.Wiring:
 
@@ -357,11 +362,16 @@ Select board type **"ESP32 Dev Module"**
 - [ ] Click to **INTALL** it.
 ![](./media/an1.png)
 
-6.Copy the code below into the Arduino IDE and click upload.
+6.Open the code named ***\*Adjust_the_servo_to_90_degrees\**** using the Arduino IDE and upload it. 
+
+![img](Smart%20Robot%20Arm%20Tutorial/wps6-17295879062941.jpg)
+
+Or directly copy the code below into the Arduino IDE and click upload.
+
 ```c
 /*
   Keyestudio ESP32 Robot Arm
-  9-6 Servo Configuration
+  7-5 Servo Configuration
   Function: set servo at pin IO17 to the angle of 90°
   http://www.keyestudio.com
 */
@@ -387,6 +397,8 @@ void loop() {
 
 After uploading the code, the servo will initialize to 0° first. Then it rotates from 0 to 180° and then it maintains at 90°. We need to ensure the servo is at 90° position before installing.
 
+Operate all servos in this way to adjust the angle of the servos to 90°
+
 
 
 ## 8. Assembly
@@ -406,7 +418,7 @@ Steps:
 ![Img](./media/img-20240702172625.png)
 
 
-![](./media/8-1-3.png)![Img](./media/img-20240702172633.png)
+![](./media/8-1-3.png)
 
 
 8.1.2 Mount Two-slot 18650 Battery Holder：
@@ -420,50 +432,21 @@ Steps:
 ![](./media/8-1(1)-2.png)
 
 
-![Img](./media/img-20240702173123.png)
 ![Img](./media/img-20240702173155.png)
-
 
 8.1.3 Replace the Battery Holder
 
-**Six-slot AA Battery Holder：**
+To Remove the six-slot AA Battery Holder：
 
-![](./media/8-1-4.png)
+Loosen the M3 screw and move the battery case towards the centre
 
-![](./media/8-1-5.png)
-
-![](./media/8-1-6.png)
-
-![](./media/8-1-7.png)
-
-![](./media/8-1-8.png)
-
-![](./media/8-1-9.png)
-
----
-
-
-**Two-slot 18650 Battery Holder：**
-
-![](./media/8-1(1)-4.png)
+![image-20241022171537592](Smart%20Robot%20Arm%20Tutorial/image-20241022171537592.png)
 
 
 
-![](./media/8-1(1)-5.png)
+Push the battery case outward to remove it and replace it with another one.
 
-
-
-![](./media/8-1(1)-6.png)
-
-
-
-![](./media/8-1(1)-7.png)
-
-![](./media/8-1(1)-8.png)
-
-![](./media/8-1(1)-9.png)
-
-
+![image-20241022171600428](Smart%20Robot%20Arm%20Tutorial/image-20241022171600428.png)
 
 ### 8.2 Install Expansion Board and ESP32 Development Board
 
@@ -511,7 +494,8 @@ Steps:
 
 ![](./media/8-4-3.png)
 
-<p style="color:red">Note the pit marked in green as follows:</p>
+NOTE：1.We need to adjust the servo to 90° before assembly.
+               2.Note the pit marked in green as follows
 
 ![1](./media/8-4-4.png)
 
@@ -535,70 +519,19 @@ Required parts:
 
 ![](./media/8-6-1.png)
 
-Steps:
+NOTE：We need to adjust the servo to 90° before assembly.
 
 ![](./media/8-6-2.png)
 
 ![](./media/8-6-3.png)
 
-<p style="font-size:25px;color:red;">NOTE: It is essential to set servo angle! Otherwise, the servo may be damaged!</p>
-
-Wiring:
-
-| Servo drive board |   Servo   |
-| :---------------: | :-------: |
-|   IO17(yellow)    | S(yellow) |
-|      5V(red)      |  V(red)   |
-|    GND(black)     | G(brown)  |
-
-![servo-IO17](./media/servo-IO17.png)
-
-Test code:
-
-Use the Arduino IDE to open this code directly from the tutorial package.
-
-![Img](./media/img-20240703150358.png)
 
 
-
-
-<p style="color:red">Before uploading code, please import “ESP32Servo” library to Arduino IDE to avoid compiling failure. The library file version must be 1.2.1, otherwise an error will also be reported. How to import "ESP32Servo" library:</p>
-
-![](./media/an1.png)
-
-Or you can copy and paste the code from below into the Arduino IDE.
-
-
-```c
-/*
-  Keyestudio ESP32 Robot Arm
-  8-6 Servo Configuration
-  Function: set servo at pin IO17 to the angle of 90°
-  http://www.keyestudio.com
-*/
-#include <ESP32Servo.h>
-
-// create a servo objects ，Customizable name
-Servo servo;
-int servoPin = 17; //Connect servo to pin IO17
-
-void setup()
-{ 
-  servo.attach(servoPin);  
-  servo.write(0);  //Set servo angle to 0°
-  delay(1000);
-  servo.write(180);  //Set servo angle to 180°
-  delay(1000);   
-  servo.write(90);  //Set servo angle to 90°
-}
-
-void loop() {
-}
-```
-
-After uploading the code, the servo will initialize to 0° first. Then it rotates from 0 to 180° and then it maintains at 90°. We need to ensure the servo is at 90° position before installing.
-
+NOTE：1.We need to adjust the servo to 90° before assembly.
+               2.Note the orientation of the holes marked by the green circles.
 Vertically mount it as follows:
+Step1：Fix the servo arm to the acrylic with a M1.2*5 screw
+Step2：Use a M2*4 screw to mount the acrylic on the servo shaft, taking care to keep the acrylic level with the edge of the servo.
 
 ![](./media/8-6-4.png)
 
@@ -638,57 +571,9 @@ Steps:
 
 
 
-<p style="font-size:25px;color:red;">NOTE: It is essential to set servo angle! Otherwise, the servo may be damaged!</p>
-
-Wiring:
-
-| Servo drive board |   Servo   |
-| :---------------: | :-------: |
-|    IO2(yellow)    | S(yellow) |
-|      5V(red)      |  V(red)   |
-|    GND(black)     | G(brown)  |
-
-![servo-IO2](./media/servo-IO2.png)
-
-
-
-Use the Arduino IDE to open this code directly from the tutorial package.
-
-![Img](./media/img-20240703153745.png)
-
-
-Or you can copy and paste the code from below into the Arduino IDE
-
-```c
-/*
-  Keyestudio ESP32 Robot Arm
-  8-8 Servo Configuration
-  Function: Set servo at pin IO2 to the angle of 90°
-  http://www.keyestudio.com
-*/
-#include <ESP32Servo.h>
-
-// create a servo objects ，Customizable name
-Servo servo;
-int servoPin = 2; //Connect servo to pin IO2
-
-void setup()
-{ 
-  servo.attach(servoPin); 
-  servo.write(0);  //Set servo angle to 0°
-  delay(1000);
-  servo.write(180);  //Set servo angle to 180°
-  delay(1000);   
-  servo.write(90);  //Set servo angle to 90°
-}
-
-void loop() {
-}
-```
-
-After uploading the code, the servo will initialize to 0° first. Then it rotates from 0 to 180° and then it maintains at 90°. We need to ensure the servo is at 90° position before installing.
-
-<p style="color:red">NOTE: As marked by the two arrows, the slope of the forearm should be aligh with the carved line on the upper arm.</p>
+NOTE:  
+1.We need to adjust the servo to 90° before assembly.
+2.As marked by the two arrows, the slope of the forearm should be aligh with the carved line on the upper arm.
 
 ![](./media/8-8-6.png)
 
@@ -718,60 +603,15 @@ Required parts:
 
 ![](./media/8-10-1.png)
 
-Steps:
+NOTE:  
+1.We need to adjust the servo to 90° before assembly.
+2.When assembling the gear and clip, do not turn the servo shaft to avoid changing its already adjusted 90° position.
 
 ![](./media/8-10-2.png)
 
 ![](./media/8-10-3.png)
 
 
-
-<p style="font-size:25px;color:red;">NOTE: It is essential to set servo angle! Otherwise, the servo may be damaged!</p>
-
-Wiring:
-
-| Servo drive board |   Servo   |
-| :---------------: | :-------: |
-|    IO4(yellow)    | S(yellow) |
-|      5V(red)      |  V(red)   |
-|    GND(black)     | G(brown)  |
-
-![servo-IO4](./media/servo-IO4.png)
-
-Use the Arduino IDE to open this code directly from the tutorial package.
-
-![Img](./media/img-20240703155135.png)
-
-
-
-```c
-/*
-  Keyestudio ESP32 Robot Arm
-  8-10 Servo Configuration
-  Function: Set servo at pin IO4 to the angle of 90°
-  http://www.keyestudio.com
-*/
-#include <ESP32Servo.h>
-
-// create a servo objects ，Customizable name
-Servo servo;
-int servoPin = 4; //Connect servo to pin IO4
-
-void setup()
-{ 
-  servo.attach(servoPin);
-  servo.write(0);  //Set servo angle to 0°
-  delay(1000);
-  servo.write(180);  //Set servo angle to 180°
-  delay(1000);   
-  servo.write(90);  //Set servo angle to 90°
-}
-
-void loop() {
-}
-```
-
-After uploading the code, the servo will initialize to 0° first. Then it rotates from 0 to 180° and then it maintains at 90°. We need to ensure the servo with plastic gear is at 90° position.
 
 ![](./media/8-10-4.png)
 
@@ -789,7 +629,7 @@ Required parts:
 
 ![](./media/8-11-1.png)
 
-Steps:
+Steps: ①②③④
 
 ![](./media/8-11-2.png)
 
@@ -817,58 +657,9 @@ Steps:
 
 ![](./media/8-12-11.png)
 
-![](./media/8-12-12.png)
-
-
-
-<p style="font-size:25px;color:red;">Let's adjust the angle of the servo on the turntable.</p>
-
-Wiring:
-
-| Servo drive board |   Servo   |
-| :---------------: | :-------: |
-|   IO16(yellow)    | S(yellow) |
-|      5V(red)      |  V(red)   |
-|    GND(black)     | G(brown)  |
-
-![servo-IO16](./media/servo-IO16.png)
-
-Use the Arduino IDE to open this code directly from the tutorial package.
-
-![Img](./media/img-20240703161336.png)
-
-Or you can copy and paste the code from below into the Arduino IDE.
-
-```c
-/*
-  Keyestudio ESP32 Robot Arm
-  8-12 Servo Configuaration
-  Function: set servo at pin IO16 to the angle of 90°
-  http://www.keyestudio.com
-*/
-#include <ESP32Servo.h>
-
-// create a servo objects ，Customizable name
-Servo servo;
-int servoPin = 16; //Connect servo to pin IO16
-
-void setup()
-{ 
-  servo.attach(servoPin); 
-  servo.write(0);  //set servo angle to 0°
-  delay(1000);
-  servo.write(180);  //set servo angle to 180°
-  delay(1000);   
-  servo.write(90);  //set servo angle to 90°
-}
-
-void loop() {
-}
-```
-
-After uploading the code, the servo will initialize to 0° first. Then it rotates from 0 to 180° and then it maintains at 90°. We need to ensure the servo is at 90° position before installing.
-
-<p style="color:red">Note the pit marked in green as follows:</p>
+![](./media/8-12-12.png)NOTE：
+1.We need to adjust the servo to 90° before assembly.
+2.Note the pit marked in green as follows
 
 ![](./media/8-12-6.png)
 
@@ -908,7 +699,7 @@ Connect the corresponding servo motor to the corresponding IO port according to 
 
 ![8-15-1](./media/8-15-1.png)  
 
-![8-15-2](./media/8-15-2.png)
+![image-20241025172800263](Smart%20Robot%20Arm%20Tutorial/image-20241025172800263.png)
 
 <p style="color:red;">Attention: The servo of the claw part requires a longer wiring, so a 3-pin DuPont cable is used for connection</p>
 
@@ -1016,7 +807,10 @@ Before uploading code, please import “ESP32Servo” library to Arduino IDE to 
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![Img](./media/img-20240703162740.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022173644402](Smart%20Robot%20Arm%20Tutorial/image-20241022173644402.png)
 
 Or you can copy and paste the code from below into the Arduino IDE.
 
@@ -1085,9 +879,7 @@ The analog value will decrease in the Y-axis upward because the resistance of th
 
 
 
-9.2.4 Read the remote lever value of the handle
-
-Read the values of the two joysticks and print them on the serial monitor.
+9.2.4 Read the values of the two joysticks and print them on the serial monitor.
 
 Before uploading code, please import “ESP32Servo” library to Arduino IDE to avoid compiling failure. 
 
@@ -1095,7 +887,10 @@ Before uploading code, please import “ESP32Servo” library to Arduino IDE to 
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![Img](./media/img-20240703163749.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022173721215](Smart%20Robot%20Arm%20Tutorial/image-20241022173721215.png)
 
 
 Or copy the code below into the Arduino IDE and click upload.
@@ -1103,7 +898,7 @@ Or copy the code below into the Arduino IDE and click upload.
 ```c
 /*
   Keyestudio ESP32 Robot Arm
-  9-2-4 tutorial code
+  9-2 tutorial code
   Function: 
   http://www.keyestudio.com
 */
@@ -1177,7 +972,9 @@ We connect the ESP32 development board and the joystick module to the servo driv
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![Img](./media/img-20240703173546.png)
+
+
+![image-20241022173753394](Smart%20Robot%20Arm%20Tutorial/image-20241022173753394.png)
 
 Or you can copy and paste the code from below into the Arduino IDE.
 ```c
@@ -1348,7 +1145,10 @@ The current angle of the servo can be stored continuously for 10 times by pressi
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![Img](./media/img-20240703175504.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022173950890](Smart%20Robot%20Arm%20Tutorial/image-20241022173950890.png)
 
 
 Or you can copy and paste the code from below into the Arduino IDE.
@@ -1604,7 +1404,7 @@ In this experiment, we will control the arm through WiFi.
 
 **You need to prepare:**
 - a **2.4 GHz WiFi**. It can be a mobile hotspot or a router.
-- a phone/IPAD/computer that can connect to the same WiFi.
+- a phone/IPAD/computer that can connect to the same internet.
 - The network name and password of your wifi.
 
 NOTE: 
@@ -1640,7 +1440,10 @@ espressif official: [https://www.espressif.com.cn/en/home](https://www.espressif
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![img-20240704171843](./media/img-20240704171843.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174042561](Smart%20Robot%20Arm%20Tutorial/image-20241022174042561.png)
 
 Or you can copy and paste the code from below into the Arduino IDE.
 
@@ -1700,11 +1503,14 @@ After uploading the code, open the serial monitor you will see it prints the con
 
 
 
-In this step, once esp32 board connect to the wifi, the ESP32's Web server will serve up web pages. In the following example, we will create a simple web page that says "Hello, World!". You can use the phone/IPAD/computer that connected to the same WiFi as ESP32 board to visit this web page.
+In this step, once esp32 board connect to the wifi, the ESP32's Web server will serve up web pages. In the following example, we will create a simple web page that says "Hello, World!". You can use the phone/IPAD/computer that connected to the same internet as ESP32 board to visit this web page.
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![img-20240704171919](./media/img-20240704171919.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174102921](Smart%20Robot%20Arm%20Tutorial/image-20241022174102921.png)
 
 Or you can copy and paste the code from below into the Arduino IDE.
 
@@ -1811,7 +1617,10 @@ After uploading code, the arduino serial monitor will display the ESP32 IP addre
 
 Use the Arduino IDE to open this code directly from the tutorial package.
 
-![img-20240704172330](./media/img-20240704172330.png)
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174128665](Smart%20Robot%20Arm%20Tutorial/image-20241022174128665.png)
 
 Or you can copy and paste the code from below into the Arduino IDE.
 
@@ -2064,7 +1873,7 @@ After uploading code, open Arduino IDE and set baud rate of the arduino series m
 
 ![](./media/9-4-3-3-1.png)
 
-Open the browser and visit the IP address in the URL bar, such as "192.168.135.7" here. Enter the web page as shown below:
+You can use the phone/IPAD/computer that connected to the same internet as ESP32 board to visit this IP address. Open the browser and visit the IP address in the URL bar, such as "192.168.135.7" here. Enter the web page as shown below:
 
 ![](./media/9-4-3-3-2.jpg)
 
