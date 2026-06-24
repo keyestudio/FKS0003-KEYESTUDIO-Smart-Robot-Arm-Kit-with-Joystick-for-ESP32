@@ -9,6 +9,7 @@
    - Six AA batteries or two 18650 batteries
    - A computer with a stable Internet connection
    - We can use the joystick to control the robot arm. But if you want to control it wirelessly, you need to prepare a ***\*2.4 GHz\**** WiFi(It can be a mobile hotspot or a router)
+4. [Download codes](./codes.7z).
 
 
 ## 1. Kit List

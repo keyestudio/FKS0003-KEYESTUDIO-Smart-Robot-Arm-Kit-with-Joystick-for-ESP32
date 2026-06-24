@@ -3,8 +3,6 @@
 ======================
 
 
-Projects: :download:`codes <./codes.7z>`
-
 
 
 .. toctree::
