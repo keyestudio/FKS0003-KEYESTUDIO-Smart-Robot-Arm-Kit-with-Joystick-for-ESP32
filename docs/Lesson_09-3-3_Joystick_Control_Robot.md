@@ -1,3 +1,24 @@
+### 9.3 Joystick Control Robot Arm
+
+#### 9.3.1 Introduction
+
+We connect the ESP32 development board and the joystick module to the servo drive board, and then the development board reads the value of the axis X/Y of the module to determine the rotation angle, so that the arm is controlled by the module.
+
+#### 9.3.2 Flow
+
+![10-3-2](./media/9-3-2-1747191726297-158.png)
+
+#### 9.3.3 Control the robot with the joystick.
+
+Use the Arduino IDE to open this code directly from the tutorial package.
+
+
+
+![image-20241022173753394](./media/image-20241022173753394.png)
+
+Or you can copy and paste the code from below into the Arduino IDE.
+
+```c
 /*
   Keyestudio ESP32 Robot Arm
   9-3-3 tutorial code
@@ -135,3 +156,20 @@ void gripperControl() {
     }
   }
 }
+
+```
+
+#### 9.3.4 Test Result
+
+After uploading the code, rotate joysticks to control the arm.
+
+For the left joystick, axis X controls the entire rotation of the robot arm (X < 20: turn right; X > 3000: turn left); its axis Y raises and lowers the upper arm (Y < 20: up; Y > 3000: down).
+
+For the right joystick, axis X controls the claw (X < 20: splay; X > 3000: clench); axis Y raises and lowers the forearm (Y < 20: up; Y > 3000: down).
+
+Push up the joystick module to raise up axis Y, so its value decreases, and push down to increase the value of axis Y. The working principle of the upper arm and the forearm are alike.
+
+![10-3-4](./media/9-3-4-1747191726297-159.png)
+
+![img-20240704163407](./media/img-20240704163407-1747191726297-160.png)
+

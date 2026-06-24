@@ -1,3 +1,25 @@
+### 9.3 Joystick Control Robot Arm (2)
+
+#### 9.3.5 Remember and repeat the action
+
+The current angle of the servo can be stored continuously for 10 times by pressing the button on the right joystick, and the action playback can be performed when we press the button on the left joystick.
+
+9.3.5.1 Flow
+
+![10-3-5-1](./media/9-3-5-1-1747191726297-161.png)
+
+9.3.5.2 Code
+
+Use the Arduino IDE to open this code directly from the tutorial package.
+
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022173950890](./media/image-20241022173950890.png)
+
+
+Or you can copy and paste the code from below into the Arduino IDE.
+```c
 /*
   Keyestudio ESP32 Robot Arm
   9-3-5 tutorial code
@@ -231,3 +253,12 @@ void attitude() {
     }
   }
 }
+
+```
+
+9.3.5.3 Result
+
+Every time you press the right joystick in the direction of acrylic, you can record an action, we can record up to 10 actions, after recording the action, press the left joystick in the direction of acrylic, the robot starts to execute the action just recorded.
+
+![img-20240704164208](./media/img-20240704164208-1747191726297-163.png)
+

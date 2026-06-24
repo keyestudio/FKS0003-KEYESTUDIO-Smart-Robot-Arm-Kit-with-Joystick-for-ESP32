@@ -1,6 +1,246 @@
+### 9.4 WiFi Control Robot Arm
+
+#### 9.4.1 Introduction
+
+
+In this experiment, we will control the arm through WiFi. 
+
+**You need to prepare:**
+- a **2.4 GHz WiFi**. It can be a mobile hotspot or a router.
+- a phone/IPAD/computer that can connect to the same internet.
+- The network name and password of your wifi.
+
+NOTE: 
+
+In the all codes we provided for ESP32 control, you need to change the word **your_SSID** in the code to your WiFi name and **your_PASSWORD** in the code to your WiFi password before uploading.
+
+![Img](./media/img-20240702163323-1747191726297-162.png)
+
+#### 9.4.2 Connect the ESP32 board to WiFi
+
+ESP32 Development Board comes with built-in Wi-Fi (2.4G) and Bluetooth (4.2) capabilities to easily connect to a Wi-Fi network and communicate with other devices in the network. You can use ESP32 to build web pages and display them in a browser.
+
+
+**Arduino IDE includes a library \<WiFi.h\>, which configures and monitors ESP32 Wi-Fi networking.**
+
+- Station Mode (STA mode / Wi-Fi client mode): ESP32 connects to a Wi-Fi hotspot (AP).
+- AP Mode (Soft-AP mode / Wi-Fi hotspot mode): Other Wi-Fi devices connects to the ESP32.
+- AP-STA Mode (ESP32 is both a Wi-Fi hotspot and a Wi-Fi device connecting to another Wi-Fi).
+- Support multiple security modes: WPA, WPA2, WEP, etc.
+- Support Wi-Fi searching: Active/passive scanning
+- Support hybrid mode monitoring of IEEE802.11 Wi-Fi packets.
+
+------
+
+For more wifi reference, please visit: [https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_wifi.html](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/network/esp_wifi.html)
+
+espressif official: [https://www.espressif.com.cn/en/home](https://www.espressif.com.cn/en/home)
+
+![cou112](./media/9-4-2-2-1747191726297-164.png)
+
+**Connect the ESP32 board to WiFi:**
+
+First we need to upload code to the ESP32 board to ensure the ESP32 correctly connects to Wifi. 
+
+Use the Arduino IDE to open this code directly from the tutorial package.
+
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174042561](./media/image-20241022174042561.png)
+
+Or you can copy and paste the code from below into the Arduino IDE.
+
+```c++
 /*
   Keyestudio ESP32 Robot Arm
-  9-4-4 tutorial code
+ 9-4-2 tutorial code
+  Function: connect to wifi and print ESP32 IP address on the serial monitor
+  http://www.keyestudio.com
+*/
+#include <WiFi.h>
+// #include <WebServer.h>
+/*ATTENTION:
+  ESP32 only supports wifi at a frequency of 2.4GHz.
+  If wifi fails to be connected, please check wifi name, passwords and frequency.
+  Modify "your_SSID " into your wifi name
+  Modify "your_PASSWORD" into your wifi passwords*/
+
+ const char* ssid = "your_SSID";
+ const char* password = "your_PASSWORD";
+
+void setup() {
+  Serial.begin(9600);
+  //initialize Wifi
+  WiFi.begin(ssid, password);
+  //search wifi. while loop: if no wifi is connected, keep searching; state: connecting
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected.");
+
+  //wifi connected: print the IP address
+  Serial.println("Connected to WiFi");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+}
+```
+
+In this code, please modify `your_ssid` and `your_password` into your Wi-Fi name and passwords respectively.
+
+```c++
+const char* ssid = "your_SSID";
+const char* password = "your_PASSWORD";
+```
+
+After uploading the code, open the serial monitor you will see it prints the connecting state and IP address of your WIFI.
+
+![](./media/9-4-2-3-1747191726297-165.png)
+
+------
+
+#### 9.4.3 Visit the IP Web Page
+
+
+
+In this step, once esp32 board connect to the wifi, the ESP32's Web server will serve up web pages. In the following example, we will create a simple web page that says "Hello, World!". You can use the phone/IPAD/computer that connected to the same internet as ESP32 board to visit this web page.
+
+Use the Arduino IDE to open this code directly from the tutorial package.
+
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174102921](./media/image-20241022174102921.png)
+
+Or you can copy and paste the code from below into the Arduino IDE.
+
+
+```c++
+/*
+  Keyestudio ESP32 Robot Arm
+  9-4-3 tutorial code
+  Function: Conenct to WiFi and print esp32 IP address, set up a web page saying “Hello World！”
+  http://www.keyestudio.com
+*/
+#include <WiFi.h>
+#include <WebServer.h>
+
+/*ATTENTION:
+  ESP32 only supports wifi at a frequency of 2.4GHz.
+  If wifi fails to be connected, please check wifi name, passwords and frequency.
+  Modify "your_SSID " into your wifi name
+  Modify "your_PASSWORD" into your wifi passwords*/
+
+ const char* ssid = "your_SSID";
+ const char* password = "your_PASSWORD";
+
+WiFiServer server(80);  //Set the web port to 80. You can directly enter the IP address to access the web page without entering the port number.
+
+void setup() {
+  Serial.begin(9600);
+  // Connect to WiFi network
+  Serial.println();
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected.");
+  // Start the server
+  server.begin();
+  Serial.println("Server started");
+  // Print the IP address
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  WiFiClient client = server.available();  //Try to accept a request coming in from the WiFi server and assign it to a WiFiClient object named client
+  if (!client) {                           //This conditional statement checks whether the connection from the client was successfully accepted. If not, exit execution immediately
+    return;
+  }
+  Serial.println("New client");
+  while (!client.available()) {           //The loop will wait until the client has sent the request and the data is available. While waiting, the code is delayed at 1 millisecond intervals
+    delay(1);
+  }
+    
+ // HTML Page
+//A string defines a simple HTML page that contains a title "Hello World!"
+ String webPage = "<html><head><title></title></head><body>";
+  webPage += "<h1>Hello World!</h1>";
+  webPage += "</body></html>"; 
+
+
+  client.println("HTTP/1.1 200 OK");          //Sends an HTTP response header to indicate that the server successfully processed the request
+  client.println("Content-Type: text/html");  //Set the type of the response content to HTML
+  client.println("Connection: close");        //Disconnect to the client when the response is finished
+  client.println();                           //Send a blank line to end the HTTP response header and to begin the body content
+  client.println(webPage);                    //Send the defined HTML page content to the client, so that the client will receive a message containing "Hello World!" as a response
+
+  delay(100); // Add a delay to ensure that the response is fully sent
+  client.stop(); // Disconnect to client
+}
+
+```
+
+------
+
+After uploading code, the arduino serial monitor will display the ESP32 IP address. You can visit it in browser, and you will see the web page showing “Hello, World!”.**
+
+
+**On PC:**
+
+![Img](./media/img-20240702170727-1747191726297-166.png)
+
+---
+
+**On Mobile:**
+
+![Img](./media/img-20240702170745-1747191726297-167.png)
+
+
+
+
+#### 9.4.4 WiFi Control Robot Arm
+
+<p style="background-color: yellow;font-size:22px;color:red;">In this project, some extracurricular knowledge are involved such as HTML, CSS and JS. Here is only a brief introduction. For detailed theories, please google them by yourself.</p>
+
+9.4.3.1 Flow
+
+![10-4-3-1](./media/9-4-3-1-1747191726297-168.png)
+
+9.4.4.2 Code
+
+Use the Arduino IDE to open this code directly from the tutorial package.
+
+Connect the ESP32 board to the computer with the USB cable.
+Select board type "ESP32 Dev Module" and select port COM-XX (This depends on the number your computer assigns to the ESP32 board, which you can check it in the device manager).
+
+![image-20241022174128665](./media/image-20241022174128665.png)
+
+Or you can copy and paste the code from below into the Arduino IDE.
+
+Modify **your_SSID** and **your_PASSWORD** into your own wifi name and passwords:
+
+```c++
+const char *SSID = "your_SSID";
+const char *PASS = "your_PASSWORD";
+```
+
+Code:
+
+```c
+/*
+  Keyestudio ESP32 Robot Arm
+  10-4-3-2 tutorial code
   Function: connect ESP32 to wifi to check IP address. Visit the address to enter a control panel to control the arm wirelessly
   http://www.keyestudio.com
 */
@@ -229,3 +469,23 @@ void gripperControl(int angle) {
     }
   }
 }
+
+```
+
+
+After uploading code, open Arduino IDE and set baud rate of the arduino series monitor to 9600. After the wifi is connected, the serial monitor prints the IP address of ESP32:
+
+![](./media/9-4-3-3-1-1747191726297-169.png)
+
+You can use the phone/IPAD/computer that connected to the same internet as ESP32 board to visit this IP address. Open the browser and visit the IP address in the URL bar, such as "192.168.135.7" here. Enter the web page as shown below:
+
+![](./media/9-4-3-3-2-1747191726297-170.jpg)
+
+Page comments:
+
+Drag or click the slider to control the rotation of servo.
+
+![9-4-3-3-3](./media/9-4-3-3-3-1747191726297-173.png)
+
+
+
